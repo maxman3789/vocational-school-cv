@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <h2>New Adjuster</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/adjusters">Adjuster</a></li>
+                <li class="breadcrumb-item active" aria-current="page">New Adjuster</li>
+            </ol>
+        </nav>
+        <hr>
+        {{#if alert }}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{alert}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {{/if}}
+        <form class="row g-3 needs-validation" method="POST" action="/addadjusters" novalidate>
+            {{> adjuster-form}}
+        </form>
+    </div>
+</div>

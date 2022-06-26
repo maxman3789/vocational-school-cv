@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <h2>Edit Invoice</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/invoice">Invoice</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Edit Invoice</li>
+            </ol>
+        </nav>
+        <hr>
+        {{#if alert }}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{alert}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {{/if}}
+        {{#each rows}}
+        <form class="row g-3 needs-validation" method="POST" action="/editinvoice/{{this.id}}" novalidate>
+            {{> invoice-form}}
+        </form>
+        {{/each}}
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+        <h2>View Adjusters</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/adjusters">Adjusters</a></li>
+                <li class="breadcrumb-item active" aria-current="page">View Adjusters</li>
+            </ol>
+        </nav>
+        <hr>
+        <div class="view-user p-5">
+            {{#each rows}}
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h3>{{this.adjuster_name}}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Fax</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Supervisor</th>
+                                <th scope="col">Supervisor Phone</th>
+                                <th scope="col">Supervisor Fax</th>
+                                <th scope="col">Insurance Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">{{this.adjuster_phone}}</th>
+                                <td>{{this.adjuster_fax}}</td>
+                                <td>{{this.adjuster_email}}</td>
+                                <td>{{this.adjuster_supervisor}}</td>
+                                <td>{{this.adjuster_supervisor_phone}}</td>
+                                <td>{{this.adjuster_supervisor_fax}}</td>
+                                <td>{{this.insurance_name}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

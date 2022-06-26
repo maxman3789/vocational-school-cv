@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row">
+        <h2>View Class</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/class">Classes</a></li>
+                <li class="breadcrumb-item active" aria-current="page">View Class</li>
+            </ol>
+        </nav>
+        <hr>
+        <div class="view-user p-5">
+            {{#each rows}}
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h3>{{this.class_name}}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><strong>Capacity:</strong></td>
+                                <td>{{this.capacity}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Class Start:</strong></td>
+                                <td>{{this.class_start}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Class End:</strong></td>
+                                <td>{{this.class_end}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Semester:</strong></td>
+                                <td>{{this.semester_name}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Campus:</strong></td>
+                                <td>{{this.campus_name}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Instructor:</strong></td>
+                                <td>{{this.last_name}}, {{this.first_name}} {{this.middle_name}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Department:</strong></td>
+                                <td>{{this.department_name}}</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

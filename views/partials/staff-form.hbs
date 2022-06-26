@@ -1,0 +1,121 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-6">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.first_name}}" placeholder="First Name"
+                    name="first_name">
+                <label for="floatingInput">First Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.middle_name}}" placeholder="Middle Name"
+                    name="middle_name">
+                <label for="floatingInput">Middle Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.last_name}}" placeholder="Last Name"
+                    name="last_name">
+                <label for="floatingInput">Last Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.email}}" placeholder="Email"
+                    name="email">
+                <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.username}}" placeholder="User Name"
+                    name="username">
+                <label for="floatingInput">User Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.password}}" placeholder="Password"
+                    name="password">
+                <label for="floatingInput">Password</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.street}}" placeholder="Street"
+                    name="street">
+                <label for="floatingInput">Street</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.city}}" placeholder="City"
+                    name="city">
+                <label for="floatingInput">City</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.state}}" placeholder="State"
+                    name="state">
+                <label for="floatingInput">State</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.zip}}" placeholder="Zip"
+                    name="zip">
+                <label for="floatingInput">Zip</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.country}}" placeholder="Country"
+                    name="country">
+                <label for="floatingInput">Country</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.phone}}" placeholder="Phone"
+                    name="phone">
+                <label for="floatingInput">Phone</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.designation}}" placeholder="Designation"
+                    name="designation">
+                <label for="floatingInput">Designation</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.type}}" placeholder="Type"
+                    name="type">
+                <label for="floatingInput">Type</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.status}}" placeholder="Status"
+                    name="status">
+                <label for="floatingInput">Status</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.creation_date}}" placeholder="Creation Date"
+                    name="creation_date">
+                <label for="floatingInput">Creation Date</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.campus_id}}" placeholder="Campus"
+                    name="campus_id">
+                <label for="floatingInput">Campus</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.department_id}}" placeholder="Department ID"
+                    name="department_id">
+                <label for="floatingInput">Department ID</label>
+            </div>
+        </div>
+        <div class="col-12 d-grid">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <hr>
+            <hr>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header bg-danger text-white" id="flush-headingOne">
+                        <button class="accordion-button collapsed bg-danger text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            DELETE?
+                        </button>
+                    </h2>
+
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <a href="/delete/{{this.id}}" type="button" class="btn btn-danger"><i
+                                    class="bi bi-person-x"></i> Delete</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+        <h2>View Insurance</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/insurance">Insurance</a></li>
+                <li class="breadcrumb-item active" aria-current="page">View Insurance</li>
+            </ol>
+        </nav>
+        <hr>
+        <div class="view-user p-5">
+            {{#each rows}}
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h3>{{this.insurance_name}}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">City</th>
+                                <th scope="col">State</th>
+                                <th scope="col">Zip</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Fax</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">{{this.id}}</th>
+                                <td>{{this.insurance_address}}</td>
+                                <td>{{this.insurance_city}}</td>
+                                <td>{{this.insurance_state}}</td>
+                                <td>{{this.insurance_zip}}</td>
+                                <td>{{this.insurance_phone}}</td>
+                                <td>{{this.insurance_fax}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <h2>View Attorney</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/attorney">Attorney</a></li>
+                <li class="breadcrumb-item active" aria-current="page">View Attorneys</li>
+            </ol>
+        </nav>
+        <hr>
+        <div class="view-user p-5">
+            {{#each rows}}
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h3>{{this.attorney_name}}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Law Firm</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">{{this.attorney_law_firm}}</th>
+                                <td>{{this.law_firm_address}}</td>
+                                <td>{{this.attorney_phone}}</td>
+                                <td>{{this.attorney_email}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

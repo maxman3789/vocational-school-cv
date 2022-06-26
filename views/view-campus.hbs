@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <h2>View Campus</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/campus">Campus</a></li>
+                <li class="breadcrumb-item active" aria-current="page">View Campus</li>
+            </ol>
+        </nav>
+        <hr>
+        <div class="view-user p-5">
+            {{#each rows}}
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h3>{{this.campus_name}}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Address</th>
+                                <th scope="col">Phone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">{{this.address}}</th>
+                                <td>{{this.phone}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

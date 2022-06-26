@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviso Academy - Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Insert languageSelector CSS -->
+    <link rel="stylesheet" href="../css/language.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../javascript/script.js"></script>
+
+    <script type="text/javascript">
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><a href="/"><img
+                            src="\images\Moviso-Logo-slogan-3.png" class="logo" alt="moviso academy logo"></a></div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <p><br><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+
+                        <b>Phone</b>
+                        <br>
+                        (877) 390-0883
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <p><br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house-door" viewBox="0 0 16 16">
+                            <path
+                                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                        </svg>
+
+                        <b>Main Campus</b>
+                        <br>
+                        29970 Technology Drive, Suite 218<br>Murrieta, CA 92563, United States
+                    </p>
+                    <select id="mbPOCControlsLangDrop"></select>
+
+                    <span data-mlr-text>Sausages</span>
+
+                    <span data-mlr-text>Carrot</span>
+                    <script id="rendered-js">
+                        "use strict";
+                        var mlCodes = [
+                            {
+                                code: "bg",
+                                name: "Bulgarian",
+                            },
+                            {
+                                code: "zh",
+                                name: "Traditional",
+                            },
+                            {
+                                code: "zh",
+                                name: "Simplified",
+                            },
+                            {
+                                code: "cs",
+                                name: "Czech",
+                            },
+                            {
+                                code: "da",
+                                name: "Danish",
+                            },
+                            {
+                                code: "nl",
+                                name: "Dutch",
+                            },
+                            {
+                                code: "en",
+                                name: "English",
+                            },
+                            {
+                                code: "et",
+                                name: "Estonian",
+                            },
+                            {
+                                code: "de",
+                                name: "German",
+                            },
+                            {
+                                code: "el",
+                                name: "Greek",
+                            },
+                            {
+                                code: "hu",
+                                name: "Hungarian",
+                            },
+                            {
+                                code: "it",
+                                name: "Italian",
+                            },
+                            {
+                                code: "no",
+                                name: "Norwegian",
+                            },
+                            {
+                                code: "pl",
+                                name: "Polish",
+                            },
+                            {
+                                code: "pt",
+                                name: "Portuguese",
+                            },
+                            {
+                                code: "ro",
+                                name: "Romanian",
+                            },
+                            {
+                                code: "sk",
+                                name: "Slovak",
+                            },
+                            {
+                                code: "ru",
+                                name: "Russian",
+                            },
+                            {
+                                code: "es",
+                                name: "Spanish",
+                            },
+                            {
+                                code: "sv",
+                                name: "Swedish",
+                            },
+                        ];
+                        var MLstrings = [
+                            {
+                                English: "Sausages",
+                                Polish: "Kiełbaski",
+                                German: "Würste",
+                                Russian: "Колбасные изделия",
+                                Traditional: "香腸",
+                                Spanish: "embutido",
+                            },
+                            {
+                                English: "Carrot",
+                                Polish: "Marchewka",
+                                German: "Karotte",
+                                Russian: "Морковь",
+                                Traditional: "胡蘿蔔",
+                                Spanish: "zanahoria",
+                            }
+                        ];
+                        // Global var :(
+                        var mlrLangInUse;
+                        var mlr = function ({ dropID = "mbPOCControlsLangDrop", stringAttribute = "data-mlr-text", chosenLang = "English", mLstrings = MLstrings, countryCodes = false, countryCodeData = [], } = {}) {
+                            const root = document.documentElement;
+                            var listOfLanguages = Object.keys(mLstrings[0]);
+                            mlrLangInUse = chosenLang;
+                            (function createMLDrop() {
+                                var mbPOCControlsLangDrop = document.getElementById(dropID);
+                                // Reset the menu
+                                mbPOCControlsLangDrop.innerHTML = "";
+                                // Now build the options
+                                listOfLanguages.forEach((lang, langidx) => {
+                                    let HTMLoption = document.createElement("option");
+                                    HTMLoption.value = lang;
+                                    HTMLoption.textContent = lang;
+                                    mbPOCControlsLangDrop.appendChild(HTMLoption);
+                                    if (lang === chosenLang) {
+                                        mbPOCControlsLangDrop.value = lang;
+                                    }
+                                });
+                                mbPOCControlsLangDrop.addEventListener("change", function (e) {
+                                    mlrLangInUse = mbPOCControlsLangDrop[mbPOCControlsLangDrop.selectedIndex].value;
+                                    resolveAllMLStrings();
+                                    // Here we update the 2-digit lang attribute if required
+                                    if (countryCodes === true) {
+                                        if (!Array.isArray(countryCodeData) || !countryCodeData.length) {
+                                            console.warn("Cannot access strings for language codes");
+                                            return;
+                                        }
+                                        root.setAttribute("lang", updateCountryCodeOnHTML().code);
+                                    }
+                                });
+                            })();
+                            function updateCountryCodeOnHTML() {
+                                return countryCodeData.find(this2Digit => this2Digit.name === mlrLangInUse);
+                            }
+                            function resolveAllMLStrings() {
+                                let stringsToBeResolved = document.querySelectorAll(`[${stringAttribute}]`);
+                                stringsToBeResolved.forEach(stringToBeResolved => {
+                                    let originaltextContent = stringToBeResolved.textContent;
+                                    let resolvedText = resolveMLString(originaltextContent, mLstrings);
+                                    stringToBeResolved.textContent = resolvedText;
+                                });
+                            }
+                        };
+                        function resolveMLString(stringToBeResolved, mLstrings) {
+                            var matchingStringIndex = mLstrings.find(function (stringObj) {
+                                // Create an array of the objects values:
+                                let stringValues = Object.values(stringObj);
+                                // Now return if we can find that string anywhere in there
+                                return stringValues.includes(stringToBeResolved);
+                            });
+                            if (matchingStringIndex) {
+                                return matchingStringIndex[mlrLangInUse];
+                            }
+                            else {
+                                // If we don't have a match in our language strings, return the original
+                                return stringToBeResolved;
+                            }
+                        }
+                        mlr({
+                            dropID: "mbPOCControlsLangDrop",
+                            stringAttribute: "data-mlr-text",
+                            chosenLang: "English",
+                            mLstrings: MLstrings,
+                            countryCodes: true,
+                            countryCodeData: mlCodes,
+                        });
+
+                    </script>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light nav-bg">
+            <div class="container-fluid">
+                {{!-- <a class="navbar-brand" href="#">NavBar</a> --}}
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown" id="myDropdown">
+                            <a class="nav-link dropdown-toggle" href="/about-us" data-bs-toggle="dropdown">About Us</a>
+                            <ul class="dropdown-menu">
+                                <li> <a class="dropdown-item" href="/about-us">About Us</a></li>
+                                <li> <a class="dropdown-item" href="/locations">Locations</a></li>
+                                <li> <a class="dropdown-item" href="/computer-equipment">Computer Equipment</a></li>
+                                <li> <a class="dropdown-item" href="/gallery">Gallery</a></li>
+                                <li> <a class="dropdown-item" href="bppe-info">BPPE &raquo; </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="2020-annual-report">2020 Annual Report</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="fact-sheet">Fact Sheet</a></li>
+                                        <li><a class="dropdown-item" href="#">Catalog &raquo; </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">English (links to PDF)</a></li>
+                                                <li><a class="dropdown-item" href="#">Spanish (links to PDF)</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown" id="myDropdown">
+                            <a class="nav-link dropdown-toggle" href="/course-list"
+                                data-bs-toggle="dropdown">Courses</a>
+                            <ul class="dropdown-menu">
+                                <li> <a class="dropdown-item" href="/cbm">Computer Basics with Small Business
+                                        Marketing</a></li>
+                                <li> <a class="dropdown-item" href="/real-estate">Real Estate</a></li>
+                                <li> <a class="dropdown-item" href="/real-estate-management">Real Estate Management</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="/loan-origination-and-loan-processing">Loan
+                                        Origination and Loan Processing</a></li>
+                                <li> <a class="dropdown-item" href="/quickbooks">Quickbooks</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown" id="myDropdown">
+                            <a class="nav-link dropdown-toggle" href="/seminars" data-bs-toggle="dropdown">Seminars</a>
+                            <ul class="dropdown-menu">
+                                <li> <a class="dropdown-item" href="/seminars">Seminars</a></li>
+                                <li> <a class="dropdown-item" href="/seminars-demo-class">Seminars Demo Class</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown" id="myDropdown">
+                            <a class="nav-link dropdown-toggle" href="/contact" data-bs-toggle="dropdown">Contact Us</a>
+                            <ul class="dropdown-menu">
+                                <li> <a class="dropdown-item" href="/contact">Contact Us</a></li>
+                                <li> <a class="dropdown-item" href="/faq">FAQ</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="https://www.facebook.com/Moviso-Academy-105523080805280">Facebook</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="https://www.instagram.com/movisoacademy/">Instagram</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="https://www.youtube.com/channel/UCRYgzh4SjpwCjXavGt44AEQ">Youtube</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/divishop">Shop</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/edit">View & Edit</a>
+                        </li>
+                        
+                        {{!-- <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li> --}}
+                    </ul>
+                    <a class="btn btn-primary login" href="/login" role="button">Login</a>
+                    <a class="btn btn-primary login" href="/register" role="button">Register</a>
+                    {{!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> --}}
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    {{{body}}}
+
+    <footer>
+        <footer class="bg-secondary text-white text-center text-md-start">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Footer Content</h5>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                            aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                        </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-0">Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2022 Copyright:
+                <a class="text-white" href="https://movisoacademy.com/">Moviso Academy</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+
+    <script></script>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<div class="container">
+    <div class="row">
+        <h2>View Course</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/course">Course</a></li>
+                <li class="breadcrumb-item active" aria-current="page">View Course</li>
+            </ol>
+        </nav>
+        <hr>
+        <div class="view-user p-5">
+            {{#each rows}}
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h3>{{this.title}}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><strong>Course Number:</strong></td>
+                                <td>{{this.course_number}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>duration:</strong></td>
+                                <td>{{this.duration}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Department:</strong></td>
+                                <td>{{this.department_name}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Expires:</strong></td>
+                                <td>{{this.expires_after}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description:</strong></td>
+                                <td>{{this.description}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Credit Hours:</strong></td>
+                                <td>{{this.credit_hours}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>FA Unit:</strong></td>
+                                <td>{{this.fa_unit}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Continuing Education Credits:</strong></td>
+                                <td>{{this.continuing_ed_credits}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Instructional Hours:</strong></td>
+                                <td>{{this.instructional_hours}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lab Hours:</strong></td>
+                                <td>{{this.lab_hours}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Clinical Hours:</strong></td>
+                                <td>{{this.clinical_hours}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Capacity:</strong></td>
+                                <td>{{this.capacity}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Prerequesite Credit Hours:</strong></td>
+                                <td>{{this.prereq_credit_hours}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Subcontract Unexcused Absence:</strong></td>
+                                <td>{{this.subcontract_unexcused_absence}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Minimum Score for Credit:</strong></td>
+                                <td>{{this.min_score_for_credit}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Minimum Age:</strong></td>
+                                <td>{{this.min_age}}</td>
+                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

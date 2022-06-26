@@ -1,0 +1,29 @@
+{{!-- DON'T NEED --}}
+
+<div class="container">
+    <div class="row">
+        <h2>Edit Adjuster</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/students">Students</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Delete Student</li>
+            </ol>
+        </nav>
+        <hr>
+        {{!-- {{!-- {{#if alert }}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{alert}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {{/if}} --}}
+        {{#each rows}}
+        <form class="row g-3 needs-validation" method="DELETE" action="/deletestudents/{{this.id}}" novalidate>
+            {{!-- {{> adjuster-form}} --}}
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+        {{/each}}
+        <div class="col-12 d-grid">
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,116 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-6">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.course_number}}" placeholder="Course Number"
+                    name="course_number">
+                <label for="floatingInput">Course Number</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.title}}" placeholder="Course Title"
+                    name="title">
+                <label for="floatingInput">Course Title</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.duration}}" placeholder="Duration"
+                    name="duration">
+                <label for="floatingInput">Duration</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.expires_after}}" placeholder="Expires After"
+                    name="expires_after">
+                <label for="floatingInput">Expires After</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.description}}" placeholder="Description"
+                    name="description">
+                <label for="floatingInput">Description</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.department_id}}" placeholder="Department ID"
+                    name="department_id">
+                <label for="floatingInput">Department ID</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.credit_hours}}" placeholder="Credit Hours"
+                    name="credit_hours">
+                <label for="floatingInput">Credit Hours</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.fa_unit}}" placeholder="FA Unit"
+                    name="fa_unit">
+                <label for="floatingInput">FA Unit</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.continuing_ed_credits}}" placeholder="Continuing Edu Credits"
+                    name="continuing_ed_credits">
+                <label for="floatingInput">Continuing Edu Credits</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.instructional_hours}}" placeholder="Instructional Hours"
+                    name="instructional_hours">
+                <label for="floatingInput">Instructional Hours</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.lab_hours}}" placeholder="Lab Hours"
+                    name="lab_hours">
+                <label for="floatingInput">Lab Hours</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.clinical_hours}}" placeholder="Clinical Hours"
+                    name="clinical_hours">
+                <label for="floatingInput">Clinical Hours</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.capacity}}" placeholder="Capacity"
+                    name="capacity">
+                <label for="floatingInput">Capacity</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.prereq_credit_hours}}" placeholder="Prereq Credit Hours"
+                    name="prereq_credit_hours">
+                <label for="floatingInput">Prereq Credit Hours</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.subcontract_unexcused_absence}}" placeholder="Subcontract Unexcused Absence"
+                    name="subcontract_unexcused_absence">
+                <label for="floatingInput">Subcontract Unexcused Absence</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.min_score_for_credit}}" placeholder="Minimum Score for Credit"
+                    name="min_score_for_credit">
+                <label for="floatingInput">Minimum Score for Credit</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.min_age}}" placeholder="Minimum Age"
+                    name="min_age">
+                <label for="floatingInput">Minimum Age</label>
+            </div>
+        </div>
+        <div class="col-12 d-grid">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <hr>
+            <hr>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header bg-danger text-white" id="flush-headingOne">
+                        <button class="accordion-button collapsed bg-danger text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            DELETE?
+                        </button>
+                    </h2>
+
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <a href="/delete/{{this.id}}" type="button" class="btn btn-danger"><i
+                                    class="bi bi-person-x"></i> Delete</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

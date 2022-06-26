@@ -1,0 +1,116 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-6">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.invoice_number}}" placeholder="Invoice Number"
+                    name="invoice_number">
+                <label for="floatingInput">Invoice Number</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.insurance_id}}" placeholder="Insurance ID"
+                    name="insurance_id">
+                <label for="floatingInput">Insurance ID</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.invoice_date}}" placeholder="Invoice Date"
+                    name="invoice_date">
+                <label for="floatingInput">Invoice Date</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.invoice_amount}}" placeholder="Invoice Amount"
+                    name="invoice_amount">
+                <label for="floatingInput">Invoice Amount</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.invoice_status}}" placeholder="Invoice Status"
+                    name="invoice_status">
+                <label for="floatingInput">Invoice Status</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.invoice_packet}}" placeholder="Invoice Packet"
+                    name="invoice_packet">
+                <label for="floatingInput">Invoice Packet</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.invoice_void}}" placeholder="Invoice Void"
+                    name="invoice_void">
+                <label for="floatingInput">Invoice Void</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.invoice_void_date}}" placeholder="Invoice Void Date"
+                    name="invoice_void_date">
+                <label for="floatingInput">Invoice Void Date</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.voided_by}}" placeholder="Voided By"
+                    name="voided_by">
+                <label for="floatingInput">Voided By</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.revised_invoice_approved}}" placeholder="Revised Invoice Approved"
+                    name="revised_invoice_approved">
+                <label for="floatingInput">Revised Invoice Approved</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.revised_invoice_date}}" placeholder="Revised Invoice Date"
+                    name="revised_invoice_date">
+                <label for="floatingInput">Revised Invoice Date</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.revised_invoice_amount}}" placeholder="Revised Invoice Amount"
+                    name="revised_invoice_amount">
+                <label for="floatingInput">Revised Invoice Amount</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.revised_invoice_notes}}" placeholder="Revised Invoice Notes"
+                    name="revised_invoice_notes">
+                <label for="floatingInput">Revised Invoice Notes</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.revised_invoice_upload}}" placeholder="Revised Invoice Doc"
+                    name="revised_invoice_upload">
+                <label for="floatingInput">Revised Invoice Doc</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.insurance_refused_to_pay_revised_invoice}}" placeholder="Insurance Refused To Pay Revised Invoice"
+                    name="insurance_refused_to_pay_revised_invoice">
+                <label for="floatingInput">Insurance Refused To Pay Revised Invoice</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.insurance_refused_revised_invoice_date}}" placeholder="Insurance Refused To Pay Revised Invoice Date"
+                    name="insurance_refused_revised_invoice_date">
+                <label for="floatingInput">Insurance Refused To Pay Revised Invoice Date</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.revised_invoice_pending}}" placeholder="Revised Invoice Pending"
+                    name="revised_invoice_pending">
+                <label for="floatingInput">Revised Invoice Pending</label>
+            </div>
+        </div>
+        <div class="col-12 d-grid">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <hr>
+            <hr>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header bg-danger text-white" id="flush-headingOne">
+                        <button class="accordion-button collapsed bg-danger text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            DELETE?
+                        </button>
+                    </h2>
+
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <a href="/delete/{{this.id}}" type="button" class="btn btn-danger"><i
+                                    class="bi bi-person-x"></i> Delete</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

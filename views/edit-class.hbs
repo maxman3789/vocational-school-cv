@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <h2>Edit Class</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/class">Class</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Edit Class</li>
+            </ol>
+        </nav>
+        <hr>
+        {{#if alert }}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{alert}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {{/if}}
+        {{#each rows}}
+        <form class="row g-3 needs-validation" method="POST" action="/editclass/{{this.id}}" novalidate>
+            {{> class-form}}
+        </form>
+        {{/each}}
+    </div>
+</div>

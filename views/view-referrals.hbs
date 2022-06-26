@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <h2>View Referral</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/referrals">Referral</a></li>
+                <li class="breadcrumb-item active" aria-current="page">View Referral</li>
+            </ol>
+        </nav>
+        <hr>
+        <div class="view-user p-5">
+            {{#each rows}}
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h3>{{this.refemp_name}}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                {{!-- <th scope="col">ID</th> --}}
+                                <th scope="col">Phone</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Referral ID</th>
+                                <th scope="col">Referral Org</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                {{!-- <th scope="row">{{this.id}}</th> --}}
+                                <td>{{this.referral_phone}}</td>
+                                <td>{{this.referral_email}}</td>
+                                <td>{{this.referral_address}}</td>
+                                <td>{{this.referral_id}}</td>
+                                <td>{{this.referral_organization}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

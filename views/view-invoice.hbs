@@ -1,0 +1,102 @@
+<div class="container">
+    <div class="row">
+        <h2>View Invoice</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/invoice">Invoice</a></li>
+                <li class="breadcrumb-item active" aria-current="page">View Invoice</li>
+            </ol>
+        </nav>
+        <hr>
+        <div class="view-user p-5">
+            {{#each rows}}
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h3>{{this.invoice_number}}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><strong>System ID:</strong></td>
+                                <td>{{this.id}}</td>
+                            </tr>
+                            {{!-- <tr>
+                                <td><strong>Invoice Number:</strong></td>
+                                <td></td>
+                            </tr> --}}
+                            <tr>
+                                <td><strong>Insurance Name:</strong></td>
+                                <td>{{this.insurance_name}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Invoice Date:</strong></td>
+                                <td>{{this.invoice_date}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Invoice Amount:</strong></td>
+                                <td>{{this.invoice_amount}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Invoice Status:</strong></td>
+                                <td>{{this.invoice_status}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Invoice Packet:</strong></td>
+                                <td>{{this.invoice_packet}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Invoice Void:</strong></td>
+                                <td>{{this.invoice_void}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Invoice Void Date:</strong></td>
+                                <td>{{this.invoice_void_date}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Voided By:</strong></td>
+                                <td>{{this.voided_by}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Revised Invoice Approved:</strong></td>
+                                <td>{{this.revised_invoice_approved}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Revised Invoice Date:</strong></td>
+                                <td>{{this.revised_invoice_date}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Revised Invoice Amount:</strong></td>
+                                <td>{{this.revised_invoice_amount}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Revised Invoice Notes:</strong></td>
+                                <td>{{this.revised_invoice_notes}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Revised Invoice Doc:</strong></td>
+                                <td>{{this.revised_invoice_upload}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Insurance Refused To Pay Revised Invoice:</strong></td>
+                                <td>{{this.insurance_refused_to_pay_revised_invoice}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Insurance Refused To Pay Revised Invoice Date:</strong></td>
+                                <td>{{this.insurance_refused_revised_invoice_date}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Revised Invoice Pending:</strong></td>
+                                <td>{{this.revised_invoice_pending}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
